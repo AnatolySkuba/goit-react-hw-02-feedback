@@ -8,7 +8,12 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
     <>
       {Object.keys(options).map((option, index) => (
-        <button key={index} type="button" onClick={onLeaveFeedback}>
+        <button
+          key={index}
+          type="button"
+          className={s.button}
+          onClick={onLeaveFeedback}
+        >
           {firstLetterCaps(option)}
         </button>
       ))}
