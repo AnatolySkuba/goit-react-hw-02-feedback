@@ -38,7 +38,7 @@ export default class Section extends Component {
     } = this;
 
     return (
-      <>
+      <section>
         <h2>Please leave feedback</h2>
         <FeedbackOptions options={state} onLeaveFeedback={onLeaveFeedback} />
         <Statistics
@@ -48,7 +48,7 @@ export default class Section extends Component {
           total={countTotalFeedback()}
           positivePercentage={countPositiveFeedbackPercentage()}
         />
-      </>
+      </section>
     );
   }
 }
