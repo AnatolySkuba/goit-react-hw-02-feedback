@@ -21,6 +21,7 @@ export default class Section extends Component {
   };
 
   onLeaveFeedback = evt => {
+    evt.preventDefault();
     const element = evt.target.innerText.toLowerCase();
     this.setState(state => ({
       [element]: state[element] + 1,
