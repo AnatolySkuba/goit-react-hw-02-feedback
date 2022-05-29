@@ -22,12 +22,6 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
 }
 
 FeedbackOptions.propTypes = {
-  state: PropTypes.objectOf(
-    PropTypes.shape({
-      good: PropTypes.number.isRequired,
-      neutral: PropTypes.number.isRequired,
-      bad: PropTypes.number.isRequired,
-    })
-  ),
+  buttons: PropTypes.arrayOf(['good', 'neutral', 'bad']),
   onLeaveFeedback: PropTypes.func.isRequired,
 };

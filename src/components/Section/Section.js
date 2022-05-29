@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function Section({ children }) {
   return (
     <section>
@@ -6,3 +8,5 @@ export default function Section({ children }) {
     </section>
   );
 }
+
+Section.propTypes = { children: PropTypes.arrayOf(PropTypes.object) };
