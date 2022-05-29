@@ -7,7 +7,7 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
 
   return (
     <>
-      {Object.keys(options).map((option, index) => (
+      {options.map((option, index) => (
         <button
           key={index}
           type="button"

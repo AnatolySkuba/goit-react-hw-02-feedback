@@ -1,4 +1,3 @@
-import Notification from 'components/Notification/Notification';
 import PropTypes from 'prop-types';
 
 export default function Statistics({
@@ -10,8 +9,7 @@ export default function Statistics({
 }) {
   return (
     <>
-      <h2>Statistics</h2>
-      {total ? (
+      {
         <ul>
           <li>Good: {good}</li>
           <li>Neutral: {neutral}</li>
@@ -19,9 +17,7 @@ export default function Statistics({
           <li>Total: {total}</li>
           <li>Positive feedback: {positivePercentage}%</li>
         </ul>
-      ) : (
-        <Notification message="There is no feedback" />
-      )}
+      }
     </>
   );
 }
